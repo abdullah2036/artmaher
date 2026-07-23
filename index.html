@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحات لولو</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="لوحات لولو">
+    <meta property="og:description" content="لوحات أكريلك يدوية الصنع — تخرّج، زواج، هدايا، وديكور | اطلب عبر واتساب">
+    <meta property="og:image" content="https://z-cdn-media.chatglm.cn/files/7b3cafc5-0d74-443b-9312-f23b8253bb3b.jpeg?auth_key=1884814524-081ad3c536b34bedaf25ce263a088499-0-e566440e8b29b6f592109170714eb3e7">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:site_name" content="لوحات لولو">
+    <meta property="og:locale" content="ar_SA">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="لوحات لولو">
+    <meta name="twitter:description" content="لوحات أكريلك يدوية الصنع — تخرّج، زواج، هدايا، وديكور">
+    <meta name="twitter:image" content="https://z-cdn-media.chatglm.cn/files/7b3cafc5-0d74-443b-9312-f23b8253bb3b.jpeg?auth_key=1884814524-081ad3c536b34bedaf25ce263a088499-0-e566440e8b29b6f592109170714eb3e7">
+
+    <meta name="description" content="لوحات أكريلك يدوية الصنع — تخرّج، زواج، هدايا، وديكور | اطلب عبر واتساب 0566168895">
+    <meta name="theme-color" content="#81D8D0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#080e14',
+                        surface: '#0d1a24',
+                        card: '#13222f',
+                        tif: '#81D8D0',
+                        tifDark: '#4DB6AC',
+                        tifLight: '#B2F0EA',
+                        tifSoft: '#A7E8E0',
+                        gold: '#E8D5B7',
+                        goldDark: '#C9A96E',
+                        sky: '#64B5F6',
+                    },
+                    fontFamily: { taj: ['Tajawal', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Tajawal',sans-serif;background:#080e14;color:#fff;overflow-x:hidden}
+        ::-webkit-scrollbar{width:5px}
+        ::-webkit-scrollbar-track{background:#080e14}
+        ::-webkit-scrollbar-thumb{background:#81D8D0;border-radius:10px}
+
+        @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(2deg)}}
+        @keyframes shimmer{0%{background-position:-200% center}100%{background-position:200% center}}
+        @keyframes sparkle{0%,100%{opacity:0;transform:scale(0)}50%{opacity:1;transform:scale(1)}}
+        @keyframes heartbeat{0%,100%{transform:scale(1)}25%{transform:scale(1.15)}50%{transform:scale(1)}75%{transform:scale(1.1)}}
+        @keyframes floatSlow{0%,100%{transform:translate(0,0) rotate(0deg)}33%{transform:translate(10px,-10px) rotate(5deg)}66%{transform:translate(-5px,5px) rotate(-3deg)}}
+        @keyframes pulse-tif{0%,100%{box-shadow:0 0 0 0 rgba(129,216,208,0.4)}50%{box-shadow:0 0 20px 8px rgba(129,216,208,0)}}
+        @keyframes wiggle{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+        @keyframes glow-border{0%,100%{border-color:rgba(129,216,208,0.3)}50%{border-color:rgba(181,240,234,0.4)}}
+        @keyframes price-pop{0%{transform:scale(0) rotate(-10deg);opacity:0}60%{transform:scale(1.2) rotate(3deg)}100%{transform:scale(1) rotate(0deg);opacity:1}}
+        @keyframes confetti-fall{0%{transform:translateY(-10px) rotate(0deg);opacity:1}100%{transform:translateY(30px) rotate(360deg);opacity:0}}
+        @keyframes badge-bounce{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+
+        .fade-up{animation:fadeUp .8s ease-out forwards}
+        .float-anim{animation:float 5s ease-in-out infinite}
+        .heartbeat{animation:heartbeat 2s ease-in-out infinite}
+        .badge-bounce{animation:badge-bounce 2s ease-in-out infinite}
+        .delay-1{animation-delay:.1s}.delay-2{animation-delay:.2s}.delay-3{animation-delay:.3s}
+        .delay-4{animation-delay:.4s}.delay-5{animation-delay:.5s}.delay-6{animation-delay:.6s}
+        .delay-7{animation-delay:.7s}.delay-8{animation-delay:.8s}
+
+        .shimmer-text{background:linear-gradient(90deg,#81D8D0,#E8D5B7,#B2F0EA,#81D8D0,#E8D5B7);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 5s linear infinite}
+
+        .hero-bg{background:radial-gradient(ellipse at 15% 50%,rgba(129,216,208,.08) 0%,transparent 50%),radial-gradient(ellipse at 85% 20%,rgba(100,181,246,.06) 0%,transparent 50%),radial-gradient(ellipse at 50% 90%,rgba(232,213,183,.04) 0%,transparent 50%),#080e14}
+
+        .product-card{transition:all .4s cubic-bezier(.175,.885,.32,1.275)}
+        .product-card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(129,216,208,.1);border-color:rgba(129,216,208,.3)}
+        .product-card:hover .card-img{transform:scale(1.06)}
+        .product-card .card-img{transition:transform .6s ease}
+
+        .cat-card{transition:all .3s ease;position:relative;overflow:hidden}
+        .cat-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(129,216,208,.1),rgba(100,181,246,.06));opacity:0;transition:opacity .3s ease;border-radius:inherit}
+        .cat-card:hover::before{opacity:1}
+        .cat-card:hover{transform:translateY(-5px);border-color:rgba(129,216,208,.4);box-shadow:0 10px 30px rgba(129,216,208,.06)}
+        .cat-card:hover .feature-icon{transform:scale(1.15) rotate(5deg)}
+        .feature-icon{transition:all .3s ease}
+
+        .wa-btn{background:linear-gradient(135deg,#25D366,#128C7E);transition:all .3s ease}
+        .wa-btn:hover{transform:scale(1.05);box-shadow:0 10px 30px rgba(37,211,102,.3)}
+        .tif-btn{background:linear-gradient(135deg,#81D8D0,#4DB6AC);transition:all .3s ease}
+        .tif-btn:hover{transform:scale(1.05);box-shadow:0 10px 30px rgba(129,216,208,.3)}
+        .offer-btn{background:linear-gradient(135deg,#E8D5B7,#C9A96E);color:#080e14;transition:all .3s ease}
+        .offer-btn:hover{transform:scale(1.05);box-shadow:0 10px 30px rgba(232,213,183,.3)}
+
+        .wa-fixed{position:fixed;bottom:24px;left:24px;z-index:1000;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#25D366,#128C7E);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .3s ease;cursor:pointer;animation:pulse-tif 2s infinite}
+        .wa-fixed:hover{transform:scale(1.12)}
+
+        .nav-glass{background:rgba(8,14,20,.88);backdrop-filter:blur(20px);border-bottom:1px solid rgba(129,216,208,.06)}
+        .tif-line{height:2px;background:linear-gradient(90deg,transparent,#81D8D0,#64B5F6,transparent)}
+
+        .reveal{opacity:0;transform:translateY(30px);transition:all .8s ease}
+        .reveal.visible{opacity:1;transform:translateY(0)}
+
+        .order-glow{position:relative}
+        .order-glow::after{content:'';position:absolute;inset:-1px;border-radius:inherit;background:linear-gradient(135deg,#81D8D0,#64B5F6,#E8D5B7,#81D8D0);background-size:300% 300%;animation:shimmer 4s linear infinite;z-index:-1;opacity:.35;filter:blur(10px)}
+
+        .toast{position:fixed;top:100px;left:50%;transform:translateX(-50%) translateY(-20px);background:rgba(129,216,208,.95);color:#080e14;padding:12px 28px;border-radius:50px;font-weight:700;font-size:14px;z-index:9999;opacity:0;transition:all .4s ease;pointer-events:none}
+        .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+        .mobile-menu{transform:translateX(100%);transition:transform .4s ease}
+        .mobile-menu.open{transform:translateX(0)}
+
+        .sparkle-dot{position:absolute;width:4px;height:4px;background:#81D8D0;border-radius:50%;animation:sparkle 3s ease-in-out infinite;pointer-events:none}
+        .glow-blob{position:absolute;border-radius:50%;opacity:.1;pointer-events:none;filter:blur(80px)}
+
+        .img-glow{position:relative}
+        .img-glow::before{content:'';position:absolute;inset:-8px;border-radius:1.5rem;background:linear-gradient(135deg,rgba(129,216,208,.25),rgba(100,181,246,.15),rgba(232,213,183,.15));z-index:-1;filter:blur(20px)}
+
+        .sticker{display:inline-flex;align-items:center;gap:4px;padding:4px 12px;border-radius:50px;font-size:11px;font-weight:700}
+        .price-card{animation:glow-border 3s ease-in-out infinite;border:1px solid rgba(129,216,208,.25)}
+
+        .offer-banner{background:linear-gradient(135deg,rgba(129,216,208,.12),rgba(232,213,183,.08),rgba(100,181,246,.08));border:1px solid rgba(129,216,208,.15);backdrop-filter:blur(10px)}
+        .offer-price{animation:price-pop .8s ease-out forwards;animation-delay:.5s;opacity:0;transform-origin:center}
+        .confetti{position:absolute;width:6px;height:6px;border-radius:50%;animation:confetti-fall 2s ease-out infinite;pointer-events:none}
+        .ribbon{position:absolute;top:16px;left:-8px;background:linear-gradient(135deg,#E8D5B7,#C9A96E);color:#080e14;padding:6px 20px 6px 14px;font-size:12px;font-weight:900;border-radius:0 8px 8px 0;z-index:10;box-shadow:0 4px 15px rgba(232,213,183,.3)}
+        .ribbon::before{content:'';position:absolute;left:0;bottom:-6px;border:3px solid #a08050;border-right-color:transparent;border-bottom-color:transparent}
+
+        .offer-expired{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.05);backdrop-filter:blur(10px)}
+        .expired-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:50px;padding:8px 20px}
+    </style>
+</head>
+<body>
+
+    <div id="toast" class="toast">✨ جاري التحويل لواتساب...</div>
+
+    <a href="https://wa.me/966566168895?text=%D8%A7%D9%84%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85!%20%F0%9F%8C%B8%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B7%D8%B7%D8%A8%20%D9%85%D9%86%20%D9%85%D8%AA%D8%AC%D8%B1%D9%83" target="_blank" class="wa-fixed" title="تواصل معنا">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="nav-glass fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <a href="#home" class="flex items-center gap-3">
+                    <img src="https://z-cdn-media.chatglm.cn/files/7b3cafc5-0d74-443b-9312-f23b8253bb3b.jpeg?auth_key=1884814524-081ad3c536b34bedaf25ce263a088499-0-e566440e8b29b6f592109170714eb3e7" alt="لوحات لولو" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-tif/40">
+                    <span class="text-lg sm:text-xl font-bold shimmer-text">لوحات لولو</span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#offer" id="navOfferLink" class="text-sm text-gold font-bold hover:text-gold/80 transition-colors flex items-center gap-1"><iconify-icon icon="mdi:fire" width="16"></iconify-icon>عرض خاص</a>
+                    <a href="#pricing" class="text-sm text-white/60 hover:text-tif transition-colors">الأسعار</a>
+                    <a href="#categories" class="text-sm text-white/60 hover:text-tif transition-colors">التصنيفات</a>
+                    <a href="#gallery" class="text-sm text-white/60 hover:text-tif transition-colors">أعمالنا</a>
+                    <a href="#how" class="text-sm text-white/60 hover:text-tif transition-colors">كيف تطلب</a>
+                    <a href="https://wa.me/966566168895?text=%D8%A7%D9%84%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85!%20%F0%9F%8C%B8%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B7%D8%A8%20%D9%85%D9%86%20%D9%85%D8%AA%D8%AC%D8%B1%D9%83" target="_blank" class="wa-btn text-white text-sm font-bold px-5 py-2.5 rounded-full flex items-center gap-2"><iconify-icon icon="mdi:whatsapp" width="18"></iconify-icon>اطلب الآن</a>
+                </div>
+                <button id="menuBtn" class="md:hidden text-white/70 hover:text-tif transition-colors p-2"><iconify-icon icon="mdi:menu" width="28"></iconify-icon></button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-surface/95 backdrop-blur-xl z-50 p-8 md:hidden">
+            <button id="closeMenu" class="absolute top-5 left-5 text-white/50 hover:text-tif"><iconify-icon icon="mdi:close" width="28"></iconify-icon></button>
+            <div class="mt-16 flex flex-col gap-6">
+                <a href="#offer" id="navOfferLinkMobile" class="mobile-link text-lg text-gold font-bold hover:text-gold/80 transition-colors flex items-center gap-2"><iconify-icon icon="mdi:fire" width="20"></iconify-icon>عرض خاص</a>
+                <a href="#pricing" class="mobile-link text-lg text-white/70 hover:text-tif transition-colors">الأسعار</a>
+                <a href="#categories" class="mobile-link text-lg text-white/70 hover:text-tif transition-colors">التصنيفات</a>
+                <a href="#gallery" class="mobile-link text-lg text-white/70 hover:text-tif transition-colors">أعمالنا</a>
+                <a href="#how" class="mobile-link text-lg text-white/70 hover:text-tif transition-colors">كيف تطلب</a>
+                <div class="tif-line my-2"></div>
+                <a href="https://wa.me/966566168895?text=%D8%A7%D9%84%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85!%20%F0%9F%8C%B8%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D7%D8%B8%D8%A8%20%D9%85%D9%86%20%D9%85%D8%AA%D8%AC%D8%B1%D9%83" target="_blank" class="wa-btn text-white text-center font-bold px-5 py-3 rounded-full flex items-center justify-center gap-2"><iconify-icon icon="mdi:whatsapp" width="20"></iconify-icon>اطلب عبر واتساب</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero-bg relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="glow-blob w-80 h-80 bg-tif top-10 -right-20"></div>
+        <div class="glow-blob w-60 h-60 bg-sky bottom-20 -left-10"></div>
+        <div class="glow-blob w-40 h-40 bg-gold top-1/2 left-1/3"></div>
+        <div class="sparkle-dot" style="top:20%;right:15%;animation-delay:0s"></div>
+        <div class="sparkle-dot" style="top:40%;right:80%;animation-delay:.8s;background:#64B5F6"></div>
+        <div class="sparkle-dot" style="top:70%;right:25%;animation-delay:1.6s"></div>
+        <div class="sparkle-dot" style="top:30%;right:60%;animation-delay:2.4s;width:3px;height:3px;background:#E8D5B7"></div>
+        <div class="sparkle-dot" style="top:80%;right:70%;animation-delay:.4s;width:5px;height:5px;background:#B2F0EA"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-right">
+                    <div class="fade-up opacity-0 delay-1 inline-flex items-center gap-2 bg-tif/10 border border-tif/20 rounded-full px-4 py-2 mb-6">
+                        <iconify-icon icon="mdi:brush" width="16" class="text-tif"></iconify-icon>
+                        <span class="text-tif text-sm font-medium">لوحات أكريلك يدوية الصنع ✨</span>
+                    </div>
+                    <h1 class="fade-up opacity-0 delay-2 text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-6">
+                        <span class="text-white">لوحات</span><br><span class="shimmer-text">لولو</span>
+                    </h1>
+                    <p class="fade-up opacity-0 delay-3 text-base sm:text-lg text-white/50 leading-relaxed mb-4 max-w-lg mx-auto lg:mx-0">أرسم لكم لوحات أكريلك بلمسة فنية مميزة — تخرّج، زواج، هدايا، وديكور يخبل مساحتك 🎨</p>
+                    <p class="fade-up opacity-0 delay-3 text-sm text-tifSoft/60 mb-8 max-w-lg mx-auto lg:mx-0">كل لوحة مرسومة يدويّاً بالأكريلك بحب وإتقان 💎</p>
+                    <div class="fade-up opacity-0 delay-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://wa.me/966566168895?text=%D8%A7%D9%84%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85!%20%F0%9F%8C%B8%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D7%D8%B8%D8%A8%20%D9%85%D9%86%20%D9%85%D8%AA%D8%AC%D8%B1%D9%83" target="_blank" class="tif-btn text-white font-bold px-8 py-4 rounded-full text-base flex items-center justify-center gap-3"><iconify-icon icon="mdi:whatsapp" width="22"></iconify-icon>اطلب عبر واتساب</a>
+                        <a href="#offer" id="heroOfferBtn" class="offer-btn font-bold px-8 py-4 rounded-full text-base flex items-center justify-center gap-2"><iconify-icon icon="mdi:fire" width="20"></iconify-icon>عرض أول طلب</a>
+                    </div>
+                    <div class="fade-up opacity-0 delay-5 grid grid-cols-3 gap-4 mt-12 max-w-md mx-auto lg:mx-0">
+                        <div class="text-center"><div class="text-2xl sm:text-3xl font-black text-tif">+500</div><div class="text-xs sm:text-sm text-white/40 mt-1">لوحة أكريلك</div></div>
+                        <div class="text-center border-x border-white/10"><div class="text-2xl sm:text-3xl font-black text-sky">+300</div><div class="text-xs sm:text-sm text-white/40 mt-1">عميل سعيد</div></div>
+                        <div class="text-center"><div class="text-2xl sm:text-3xl font-black text-gold">100%</div><div class="text-xs sm:text-sm text-white/40 mt-1">يدويّة 🎨</div></div>
+                    </div>
+                </div>
+                <div class="fade-up opacity-0 delay-3 flex justify-center lg:justify-start">
+                    <div class="relative">
+                        <div class="absolute -inset-6 bg-gradient-to-br from-tif/15 via-sky/10 to-gold/10 rounded-3xl blur-2xl"></div>
+                        <div class="img-glow">
+                            <img src="https://z-cdn-media.chatglm.cn/files/89820e62-3575-467d-8647-f20bdb0a53d2.jpeg?auth_key=1884814833-da01e76b0b444a3088e08f7d40267467-0-707775ae419c060e0cd0257c2e425fd2" alt="لوحات أكريلك" class="relative w-72 h-72 sm:w-[420px] sm:h-[420px] object-cover rounded-3xl float-anim">
+                        </div>
+                        <div class="absolute -top-3 -right-3 bg-tif text-bg text-xs font-bold px-3 py-1.5 rounded-full shadow-lg heartbeat">🎨 أكريلك</div>
+                        <div class="absolute -bottom-3 -left-3 bg-gold text-bg text-xs font-bold px-3 py-1.5 rounded-full shadow-lg" style="animation:wiggle 3s ease-in-out infinite">✨ handmade</div>
+                        <div class="absolute top-1/2 -left-6 text-2xl" style="animation:floatSlow 6s ease-in-out infinite">💎</div>
+                        <div class="absolute top-1/4 -right-5 text-xl" style="animation:floatSlow 5s ease-in-out infinite;animation-delay:1s">✨</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 fade-up opacity-0 delay-8"><div class="w-6 h-10 border-2 border-white/15 rounded-full flex justify-center pt-2"><div class="w-1.5 h-3 bg-tif rounded-full animate-bounce"></div></div></div>
+    </section>
+
+    <div class="tif-line"></div>
+
+    <!-- Special Offer -->
+    <section id="offer" class="py-16 sm:py-24 relative overflow-hidden">
+        <div class="glow-blob w-72 h-72 bg-gold top-0 left-1/2 -translate-x-1/2" style="opacity:.12;filter:blur(100px)"></div>
+
+        <!-- ACTIVE OFFER -->
+        <div id="offerActive" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="reveal">
+                <div class="offer-banner rounded-3xl p-8 sm:p-14 text-center relative">
+                    <div class="ribbon hidden sm:block">🔥 عرض محدود — مرة واحدة فقط</div>
+                    <div class="inline-flex items-center gap-2 bg-gold/15 border border-gold/25 rounded-full px-5 py-2 mb-6 badge-bounce"><iconify-icon icon="mdi:star-four-points" width="16" class="text-gold"></iconify-icon><span class="text-gold text-sm font-bold">للعملاء الجدد فقط — مرة واحدة لكل عميل</span><iconify-icon icon="mdi:star-four-points" width="16" class="text-gold"></iconify-icon></div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 leading-tight">أول طلب بـ<span class="offer-price inline-block"><span class="text-5xl sm:text-6xl lg:text-7xl font-black text-gold">10</span><span class="text-2xl sm:text-3xl text-gold/70 mr-1">ريال</span></span><br><span class="text-white/80 text-2xl sm:text-3xl">فقط! 💎</span></h2>
+                    <p class="text-white/50 text-base sm:text-lg mb-4 max-w-xl mx-auto leading-relaxed">عرض حصري لأول طلب — لوحة أكريلك صغيرة بـ 10 ريال بس!</p>
+                    <div class="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 rounded-full px-4 py-2 mb-8"><div class="w-2 h-2 rounded-full bg-red-400 animate-pulse"></div><span class="text-red-300 text-xs font-bold">العرض يختفي بعد أول استخدام — لا تفوّته!</span></div>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                        <button onclick="claimOffer()" class="offer-btn font-black px-10 py-4 rounded-full text-lg flex items-center justify-center gap-3 cursor-pointer"><iconify-icon icon="mdi:whatsapp" width="24"></iconify-icon>اطلب الآن بـ 10 ريال</button>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 max-w-md mx-auto">
+                        <div class="bg-white/5 rounded-2xl p-3 text-center border border-white/5"><iconify-icon icon="mdi:check-circle" width="20" class="text-tif mb-1"></iconify-icon><div class="text-xs text-white/50">لوحة أكريلك</div></div>
+                        <div class="bg-white/5 rounded-2xl p-3 text-center border border-white/5"><iconify-icon icon="mdi:check-circle" width="20" class="text-tif mb-1"></iconify-icon><div class="text-xs text-white/50">حجم صغير</div></div>
+                        <div class="bg-white/5 rounded-2xl p-3 text-center border border-white/5"><iconify-icon icon="mdi:check-circle" width="20" class="text-tif mb-1"></iconify-icon><div class="text-xs text-white/50">يدوية 100%</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPIRED OFFER -->
+        <div id="offerExpired" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 hidden">
+            <div class="reveal">
+                <div class="offer-expired rounded-3xl p-8 sm:p-12 text-center relative">
+                    <div class="expired-badge mb-6 mx-auto">
+                        <iconify-icon icon="mdi:check-circle" width="48" class="text-white/20"></iconify-icon>
+                        <span class="text-white/20 text-lg font-bold">العرض انتهى</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white/30 mb-3">عرض أول طلب بـ 10 ريال</h2>
+                    <p class="text-white/20 text-sm max-w-md mx-auto">شكراً لمن استغل العرض! هذا العرض متاح مرة واحدة لكل عميل فقط 💎</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tif-line"></div>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 sm:py-28 relative">
+        <div class="glow-blob w-56 h-56 bg-tif top-10 left-1/3"></div>
+        <div class="glow-blob w-40 h-40 bg-sky bottom-10 right-1/4"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal"><span class="text-tif text-sm font-bold tracking-wider">✦ أسعار مناسبة للجميع ✦</span><h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mt-3 mb-4">الأسعار وطريقة الطلب</h2><p class="text-white/40 max-w-2xl mx-auto">السعر يختلف حسب حجم اللوحة والتفاصيل، لكن غالباً يتراوح بين 15 إلى 40 ريال</p></div>
+            <div class="reveal price-card bg-card rounded-3xl p-8 sm:p-12 mb-8">
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4"><div class="w-12 h-12 rounded-2xl bg-tif/15 flex items-center justify-center"><iconify-icon icon="mdi:tag-heart-outline" width="26" class="text-tif"></iconify-icon></div><h3 class="text-2xl font-black">نطاق الأسعار</h3></div>
+                        <div class="flex items-baseline gap-3 mb-4"><span class="text-5xl sm:text-6xl font-black shimmer-text">15</span><span class="text-2xl text-white/30 font-light">—</span><span class="text-5xl sm:text-6xl font-black shimmer-text">40</span><span class="text-xl text-white/40 mr-1">ريال</span></div>
+                        <p class="text-white/45 text-sm leading-relaxed">السعر النهائي يتحدد حسب: حجم اللوحة، كمية التفاصيل، نوع الألوان المستخدمة، وإذا كان فيها إطار أو لا.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white/5 rounded-2xl p-4 text-center border border-white/5"><iconify-icon icon="mdi:resize-small" width="24" class="text-tif mb-2"></iconify-icon><div class="font-bold text-sm mb-1">صغيرة</div><div class="text-gold font-black text-lg">~15 ر.س</div></div>
+                        <div class="bg-white/5 rounded-2xl p-4 text-center border border-white/5"><iconify-icon icon="mdi:resize" width="24" class="text-sky mb-2"></iconify-icon><div class="font-bold text-sm mb-1">متوسطة</div><div class="text-gold font-black text-lg">~25 ر.س</div></div>
+                        <div class="bg-white/5 rounded-2xl p-4 text-center border border-white/5"><iconify-icon icon="mdi:resize-large" width="24" class="text-tifSoft mb-2"></iconify-icon><div class="font-bold text-sm mb-1">كبيرة</div><div class="text-gold font-black text-lg">~35 ر.س</div></div>
+                        <div class="bg-white/5 rounded-2xl p-4 text-center border border-white/5"><iconify-icon icon="mdi:star-circle" width="24" class="text-gold mb-2"></iconify-icon><div class="font-bold text-sm mb-1">مميزة</div><div class="text-gold font-black text-lg">~40 ر.س</div></div>
+                    </div>
+                </div>
+                <div class="mt-6 bg-tif/5 border border-tif/15 rounded-2xl p-4 flex items-start gap-3"><iconify-icon icon="mdi:information-outline" width="22" class="text-tif mt-0.5 flex-shrink-0"></iconify-icon><p class="text-white/50 text-sm leading-relaxed">هذه الأسعار تقريبية — السعر الدقيق يحدد بعد ما توضح التفاصيل عبر واتساب. ممكن يزيد أو يقل حسب الطلب.</p></div>
+            </div>
+            <div class="reveal bg-card border border-tif/20 rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-l from-tif via-sky to-gold"></div>
+                <div class="flex items-center gap-3 mb-6"><div class="w-14 h-14 rounded-2xl bg-sky/15 flex items-center justify-center"><iconify-icon icon="mdi:cash-check" width="30" class="text-sky"></iconify-icon></div><div><h3 class="text-2xl font-black">استلام العربون أولاً 💎</h3><p class="text-white/40 text-sm">خطوة ضرورية قبل البدء بالرسم</p></div></div>
+                <div class="bg-white/5 rounded-2xl p-6 mb-6 border border-white/5"><div class="flex items-start gap-3"><span class="text-2xl mt-0.5">📌</span><div><h4 class="font-bold text-lg mb-2">ليش العربون؟</h4><p class="text-white/50 text-sm leading-relaxed">العربون يُستلم أول شي لشراء المستلزمات اللازمة للوحة (ألوان أكريلك، فرش، كانفاس، إلخ). هذا يضمن إن كل شيء جاهز قبل ما أبدأ بالرسم وما يتأخر الطلب.</p></div></div></div>
+                <div class="grid sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-tif/5 border border-tif/15 rounded-2xl p-5 flex items-start gap-3"><iconify-icon icon="mdi:numeric-1-circle" width="28" class="text-tif flex-shrink-0 mt-0.5"></iconify-icon><div><div class="font-bold text-sm mb-1">حدد طلبك</div><p class="text-white/40 text-xs leading-relaxed">ابعت التفاصيل عبر واتساب</p></div></div>
+                    <div class="bg-sky/5 border border-sky/15 rounded-2xl p-5 flex items-start gap-3"><iconify-icon icon="mdi:numeric-2-circle" width="28" class="text-sky flex-shrink-0 mt-0.5"></iconify-icon><div><div class="font-bold text-sm mb-1">أعطيك السعر النهائي</div><p class="text-white/40 text-xs leading-relaxed">أحدد السعر وأبلّغك بالعربون</p></div></div>
+                    <div class="bg-gold/5 border border-gold/15 rounded-2xl p-5 flex items-start gap-3"><iconify-icon icon="mdi:numeric-3-circle" width="28" class="text-gold flex-shrink-0 mt-0.5"></iconify-icon><div><div class="font-bold text-sm mb-1">سدّد العربون</div><p class="text-white/40 text-xs leading-relaxed">حوّل العربون وأبدأ بشراء المستلزمات</p></div></div>
+                    <div class="bg-tif/5 border border-tif/15 rounded-2xl p-5 flex items-start gap-3"><iconify-icon icon="mdi:numeric-4-circle" width="28" class="text-tif flex-shrink-0 mt-0.5"></iconify-icon><div><div class="font-bold text-sm mb-1">سدّد الباقي عند التسليم</div><p class="text-white/40 text-xs leading-relaxed">الباقي تدفعه لما توصلك اللوحة</p></div></div>
+                </div>
+                <div class="bg-sky/5 border border-sky/15 rounded-2xl p-4 flex items-start gap-3"><iconify-icon icon="mdi:shield-check-outline" width="20" class="text-sky mt-0.5 flex-shrink-0"></iconify-icon><p class="text-white/50 text-sm leading-relaxed"><strong class="text-sky">ملاحظة:</strong> العربون جزء من السعر الكلي وما يُخصم منه. يعني لو اللوحة 30 ريال وعربونها 10، الباقي 20 ريال عند الاستلام.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tif-line"></div>
+
+    <!-- Categories -->
+    <section id="categories" class="py-20 sm:py-28 relative">
+        <div class="glow-blob w-48 h-48 bg-sky top-10 left-1/4"></div>
+        <div class="glow-blob w-36 h-36 bg-tif bottom-10 right-1/4"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal"><span class="text-tifSoft text-sm font-bold tracking-wider">✦ اللي أقدّمه لكم ✦</span><h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mt-3 mb-4">التصنيفات</h2><p class="text-white/40 max-w-xl mx-auto">اختيارات كثيرة تغطي جميع المناسبات 💎</p></div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                <div class="cat-card reveal bg-card border border-white/5 rounded-3xl p-6 sm:p-8 text-center cursor-pointer" onclick="orderCategory('لوحات أكريلك فنية')"><div class="feature-icon w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-tif/15 to-tif/5 flex items-center justify-center"><iconify-icon icon="mdi:palette" width="40" class="text-tif"></iconify-icon></div><h3 class="text-lg sm:text-xl font-bold mb-2">لوحات أكريلك</h3><p class="text-white/35 text-sm hidden sm:block">رسمات أكريلك إبداعية</p></div>
+                <div class="cat-card reveal bg-card border border-white/5 rounded-3xl p-6 sm:p-8 text-center cursor-pointer" onclick="orderCategory('هدايا أكريلك')"><div class="feature-icon w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-gold/15 to-gold/5 flex items-center justify-center"><iconify-icon icon="mdi:gift" width="40" class="text-gold"></iconify-icon></div><h3 class="text-lg sm:text-xl font-bold mb-2">هدايا 🎁</h3><p class="text-white/35 text-sm hidden sm:block">هدية أكريلك مميزة</p></div>
+                <div class="cat-card reveal bg-card border border-white/5 rounded-3xl p-6 sm:p-8 text-center cursor-pointer" onclick="orderCategory('لوحة تخرج أكريلك')"><div class="feature-icon w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-sky/15 to-sky/5 flex items-center justify-center"><iconify-icon icon="mdi:school" width="40" class="text-sky"></iconify-icon></div><h3 class="text-lg sm:text-xl font-bold mb-2">تخرّج 🎓</h3><p class="text-white/35 text-sm hidden sm:block">لوحات تذكارية للخريجين</p></div>
+                <div class="cat-card reveal bg-card border border-white/5 rounded-3xl p-6 sm:p-8 text-center cursor-pointer" onclick="orderCategory('لوحة زواج أكريلك')"><div class="feature-icon w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-tifSoft/15 to-tifSoft/5 flex items-center justify-center"><iconify-icon icon="mdi:heart-multiple" width="40" class="text-tifSoft"></iconify-icon></div><h3 class="text-lg sm:text-xl font-bold mb-2">زواج 💍</h3><p class="text-white/35 text-sm hidden sm:block">لوحات رومانسية للأعراس</p></div>
+                <div class="cat-card reveal bg-card border border-white/5 rounded-3xl p-6 sm:p-8 text-center cursor-pointer" onclick="orderCategory('مناسبات أخرى')"><div class="feature-icon w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-violet-400/15 to-violet-400/5 flex items-center justify-center"><iconify-icon icon="mdi:star-four-points" width="40" class="text-violet-400"></iconify-icon></div><h3 class="text-lg sm:text-xl font-bold mb-2">مناسبات 🌟</h3><p class="text-white/35 text-sm hidden sm:block">مواليد، أعياد، وعطل</p></div>
+                <div class="cat-card reveal bg-card border border-white/5 rounded-3xl p-6 sm:p-8 text-center cursor-pointer" onclick="orderCategory('ديكور أكريلك')"><div class="feature-icon w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-gold/15 to-gold/5 flex items-center justify-center"><iconify-icon icon="mdi:lamp" width="40" class="text-gold"></iconify-icon></div><h3 class="text-lg sm:text-xl font-bold mb-2">ديكور 🏡</h3><p class="text-white/35 text-sm hidden sm:block">لوحات تزيّن المكان</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tif-line"></div>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-20 sm:py-28 relative">
+        <div class="glow-blob w-56 h-56 bg-tif bottom-20 right-10"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal"><span class="text-sky text-sm font-bold tracking-wider">✦ إلهامك يبدأ هنا ✦</span><h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mt-3 mb-4">من أعمالنا بالأكريلك</h2><p class="text-white/40 max-w-xl mx-auto">كل لوحة مرسومة بالأكريلك يدويّاً بحب 💎</p></div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="product-card reveal bg-card border border-white/5 rounded-3xl overflow-hidden group">
+                    <div class="relative overflow-hidden aspect-square">
+                        <img src="https://z-cdn-media.chatglm.cn/files/89820e62-3575-467d-8647-f20bdb0a53d2.jpeg?auth_key=1884814833-da01e76b0b444a3088e08f7d40267467-0-707775ae419c060e0cd0257c2e425fd2" alt="لوحة أكريلك" class="card-img w-full h-full object-cover">
+                        <div class="absolute top-3 right-3"><span class="sticker bg-tif/90 text-bg">أكريلك 🎨</span></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"><button onclick="orderItem('لوحة أكريلك ألوان وردية وصفراء')" class="w-full wa-btn text-white text-sm font-bold py-2.5 rounded-2xl flex items-center justify-center gap-2"><iconify-icon icon="mdi:whatsapp" width="18"></iconify-icon>اطلب مثلها</button></div>
+                    </div>
+                    <div class="p-5"><h4 class="font-bold mb-1">لوحة أكريلك ملونة 🌸</h4><p class="text-white/35 text-sm">ألوان أكريلك جريئة ومميزة</p></div>
+                </div>
+                <div class="product-card reveal bg-card border border-white/5 rounded-3xl overflow-hidden group">
+                    <div class="relative overflow-hidden aspect-square">
+                        <img src="https://z-cdn-media.chatglm.cn/files/e7136054-7e2b-4cb9-a42f-6b6735c3ed4d.jpeg?auth_key=1884814833-d99fa95e060a4e21931c97eb6a56054f-0-45fda7f353545fc6fbf26d21ed4d715b" alt="لوحة تخرج" class="card-img w-full h-full object-cover">
+                        <div class="absolute top-3 right-3"><span class="sticker bg-sky/90 text-bg">تخرّج 🎓</span></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"><button onclick="orderItem('لوحة تخرج أكريلك بأسماء الخريجين')" class="w-full wa-btn text-white text-sm font-bold py-2.5 rounded-2xl flex items-center justify-center gap-2"><iconify-icon icon="mdi:whatsapp" width="18"></iconify-icon>اطلب مثلها</button></div>
+                    </div>
+                    <div class="p-5"><h4 class="font-bold mb-1">لوحة تخرّج بالأسماء ✨</h4><p class="text-white/35 text-sm">أكريلك — تخرج 2023</p></div>
+                </div>
+                <div class="product-card reveal bg-card border border-white/5 rounded-3xl overflow-hidden group">
+                    <div class="relative overflow-hidden aspect-square">
+                        <img src="https://z-cdn-media.chatglm.cn/files/a0307b22-392e-46ce-ab1c-83010b4a01cf.jpg?auth_key=1884814833-5c34bf2a338344d3a0915e757c6f41ca-0-d179931639ee394526e47ac9ef90f5e3" alt="لوحة ديكور" class="card-img w-full h-full object-cover">
+                        <div class="absolute top-3 right-3"><span class="sticker bg-gold/90 text-bg">ديكور ☀️</span></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"><button onclick="orderItem('لوحة أكريلك خط عربي مع شمس')" class="w-full wa-btn text-white text-sm font-bold py-2.5 rounded-2xl flex items-center justify-center gap-2"><iconify-icon icon="mdi:whatsapp" width="18"></iconify-icon>اطلب مثلها</button></div>
+                    </div>
+                    <div class="p-5"><h4 class="font-bold mb-1">خط عربي مع شمس ☀️</h4><p class="text-white/35 text-sm">أكريلك — ديكور حائط</p></div>
+                </div>
+            </div>
+            <div class="reveal text-center mt-12"><p class="text-white/40 text-sm mb-4">عندك صور أعمال أكثر؟ ابعتها عبر واتساب وناضيفها هنا ✨</p><a href="https://wa.me/966566168895?text=%D8%A7%D9%84%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85!%20%F0%9F%8C%B8%20%D8%A3%D8%B1%D9%AF%20%D8%A7%D9%84%D7%8%D8%A8%20%D9%85%D9%86%20%D9%85%D8%AA%D8%AC%D8%B1%D9%83" target="_blank" class="tif-btn inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-full text-sm"><iconify-icon icon="mdi:whatsapp" width="18"></iconify-icon>تواصل معنا</a></div>
+        </div>
+    </section>
+
+    <div class="tif-line"></div>
+
+    <!-- How to Order -->
+    <section id="how" class="py-20 sm:py-28 relative">
+        <div class="glow-blob w-40 h-40 bg-sky top-10 right-1/4"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal"><span class="text-gold text-sm font-bold tracking-wider">✦ سهلة وواضحة ✦</span><h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mt-3 mb-4">خطوات الطلب</h2></div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="reveal text-center relative"><div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-tif/15 to-tif/5 border border-tif/20 flex items-center justify-center"><iconify-icon icon="mdi:chat-processing-outline" width="28" class="text-tif"></iconify-icon></div><div class="hidden lg:block absolute top-8 left-0 w-full h-px bg-gradient-to-l from-tif/20 to-tif/20 -z-10"></div><h4 class="font-bold text-sm mb-2">تواصل واتساب</h4><p class="text-white/40 text-xs">ابعت تفاصيل الطلب</p></div>
+                <div class="reveal text-center relative"><div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-sky/15 to-sky/5 border border-sky/20 flex items-center justify-center"><iconify-icon icon="mdi:cash-multiple" width="28" class="text-sky"></iconify-icon></div><div class="hidden lg:block absolute top-8 left-0 w-full h-px bg-gradient-to-l from-sky/20 to-sky/20 -z-10"></div><h4 class="font-bold text-sm mb-2">سدّد العربون</h4><p class="text-white/40 text-xs">لشراء المستلزمات</p></div>
+                <div class="reveal text-center relative"><div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-gold/15 to-gold/5 border border-gold/20 flex items-center justify-center"><iconify-icon icon="mdi:brush" width="28" class="text-gold"></iconify-icon></div><div class="hidden lg:block absolute top-8 left-0 w-full h-px bg-gradient-to-l from-gold/20 to-gold/20 -z-10"></div><h4 class="font-bold text-sm mb-2">أرسم اللوحة</h4><p class="text-white/40 text-xs">أكريلك مع متابعتك</p></div>
+                <div class="reveal text-center relative"><div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-tif/15 to-tif/5 border border-tif/20 flex items-center justify-center"><iconify-icon icon="mdi:check-decagram-outline" width="28" class="text-tif"></iconify-icon></div><div class="hidden lg:block absolute top-8 left-0 w-full h-px bg-gradient-to-l from-tif/20 to-tif/20 -z-10"></div><h4 class="font-bold text-sm mb-2">اعتماد نهائي</h4><p class="text-white/40 text-xs">شوف اللوحة ووافق</p></div>
+                <div class="reveal text-center"><div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-sky/15 to-sky/5 border border-sky/20 flex items-center justify-center"><iconify-icon icon="mdi:truck-delivery-outline" width="28" class="text-sky"></iconify-icon></div><h4 class="font-bold text-sm mb-2">الباقي + التوصيل</h4><p class="text-white/40 text-xs">ادفع الباقي وتوصلك</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tif-line"></div>
+
+    <!-- Testimonials -->
+    <section class="py-20 sm:py-28 relative">
+        <div class="glow-blob w-44 h-44 bg-tif bottom-10 left-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal"><span class="text-tif text-sm font-bold tracking-wider">✦ ثقة العملاء ✦</span><h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mt-3 mb-4">شنو يقولون عنّا</h2></div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="reveal bg-card border border-white/5 rounded-3xl p-6 sm:p-8 hover:border-tif/20 transition-colors"><div class="flex gap-1 mb-4"><iconify-icon icon="mdi:star" width="18" class="text-gold"></iconify-icon><iconify-icon icon="mdi:star" width="18" class="text-gold"></iconify-icon><iconify-icon icon="mdi:star" width="18" class="text-gold"></iconify-icon><iconify-icon icon="mdi:star" width="18" class="text-gold"></iconify-icon></div><p class="text-white/55 text-sm leading-relaxed mb-6">"طلبت لوحة تخرّج لأخوي وكانت النتيجة فوق التوقعات! الألوان حلوة والتفاصيل دقيقة 🌸"</p><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-tif/15 flex items-center justify-center text-tif font-bold text-sm">ف</div><div><div class="font-bold text-sm">فهد</div><div class="text-white/35 text-xs">لوحة تخرج أكريلك</div></div></div></div></div>
+                <div class="reveal bg-card border border-white/5 rounded-3xl p-6 sm:p-8 hover:border-sky/20 transition-colors"><div class="flex gap-1 mb-4"><iconify-icon icon="mdi:star" width="18" class="text-gold"></iconify-icon><iconify-icon icon="mdi:star" width="18" class="text-gold"></iconify-icon><iconify-icon icon="mdi:star" width="18" class="text-gold"></iconify-icon><iconify-icon icon="mdi:star" width="18" class="text-gold"></iconify-icon></div><p class="text-white/55 text-sm leading-relaxed mb-6">"سويت لوحة زواج هدية لصديقتي وعجبتها بشكل ماتتوقع! صارت أحلى قطعة ديكور في بيتها 💗"</p><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-sky/15 flex items-center justify-center text-sky font-bold text-sm">س</div><div><div class="font-bold text-sm">سارة</div><div class="text-white/35 text-xs">لوحة زواج أكريلك</div></div></div></div>
+                <div class="reveal bg-card border border-white/5 rounded-3xl p-6 sm:p-8 hover:border-gold/20 transition-colors"><div class="flex gap-1 mb-4"><iconify-icon icon="mdi:star" width="18" class="text-gold"></iconify-icon><iconify-icon icon="mdi:star" width="18" class="text-gold"></iconify-icon><iconify-icon icon="mdi:star" width="18" class="text-gold"></iconify-icon><iconify-icon icon="mdi:star" width="18" class="text-gold"></iconify-icon></div><p class="text-white/55 text-sm leading-relaxed mb-6">"طلبت أكثر من لوحة ديكور وكل مرة أنبهر! نظام العربون مرتب وما تأخر شي 🌷"</p><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gold/15 flex items-center justify-center text-gold font-bold text-sm">م</div><div><div class="font-bold text-sm">محمد</div><div class="text-white/35 text-xs">ديكور أكريلك</div></div></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tif-line"></div>
+
+    <!-- Features -->
+    <section class="py-20 sm:py-28 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal"><span class="text-sky text-sm font-bold tracking-wider">✦ لماذا نحن؟ ✦</span><h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mt-3 mb-4">مميزاتنا</h2></div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="reveal bg-card border border-white/5 rounded-3xl p-6 text-center hover:border-tif/20 transition-all hover:-translate-y-1"><div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-tif/10 flex items-center justify-center"><iconify-icon icon="mdi:hand-heart" width="28" class="text-tif"></iconify-icon></div><h4 class="font-bold mb-2">أكريلك يدوي 100%</h4><p class="text-white/35 text-sm">مرسومة يدويّاً بالكامل</p></div>
+                <div class="reveal bg-card border border-white/5 rounded-3xl p-6 text-center hover:border-sky/20 transition-all hover:-translate-y-1"><div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-sky/10 flex items-center justify-center"><iconify-icon icon="mdi:truck-delivery" width="28" class="text-sky"></iconify-icon></div><h4 class="font-bold mb-2">توصيل آمن 🚗</h4><p class="text-white/35 text-sm">تغليف محكم وتوصيل للبيت</p></div>
+                <div class="reveal bg-card border border-white/5 rounded-3xl p-6 text-center hover:border-gold/20 transition-all hover:-translate-y-1"><div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-gold/10 flex items-center justify-center"><iconify-icon icon="mdi:message-text" width="28" class="text-gold"></iconify-icon></div><h4 class="font-bold mb-2">متابعة مستمرة 💬</h4><p class="text-white/35 text-sm">أراجعك في كل مرحلة</p></div>
+                <div class="reveal bg-card border border-white/5 rounded-3xl p-6 text-center hover:border-tifSoft/20 transition-all hover:-translate-y-1"><div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-tifSoft/10 flex items-center justify-center"><iconify-icon icon="mdi:cash-multiple" width="28" class="text-tifSoft"></iconify-icon></div><h4 class="font-bold mb-2" id="featureOfferTitle">أول طلب 10 ر.س 💰</h4><p class="text-white/35 text-sm" id="featureOfferDesc">عرض للعملاء الجدد</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tif-line"></div>
+
+    <!-- CTA -->
+    <section id="contact" class="py-20 sm:py-28 relative overflow-hidden">
+        <div class="glow-blob w-72 h-72 bg-tif top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="opacity:.08;filter:blur(100px)"></div>
+        <div class="absolute top-10 right-10 text-3xl opacity-20" style="animation:floatSlow 7s ease-in-out infinite">🎨</div>
+        <div class="absolute bottom-10 left-10 text-3xl opacity-20" style="animation:floatSlow 6s ease-in-out infinite;animation-delay:2s">💎</div>
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="reveal">
+                <img src="https://z-cdn-media.chatglm.cn/files/7b3cafc5-0d74-443b-9312-f23b8253bb3b.jpeg?auth_key=1884814524-081ad3c536b34bedaf25ce263a088499-0-e566440e8b29b6f592109170714eb3e7" alt="لوحات لولو" class="w-24 h-24 mx-auto rounded-full object-cover border-2 border-tif/30 mb-8">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mb-4">جاهز تطلب؟ 💎</h2>
+                <p class="text-white/45 text-lg mb-10 max-w-lg mx-auto">تواصل مباشرة عبر واتساب وحدد طلبك — نحن هنا نساعدك</p>
+            </div>
+            <div class="reveal order-glow rounded-3xl">
+                <div class="bg-card rounded-3xl p-8 sm:p-12">
+                    <a href="https://wa.me/966566168895?text=%D8%A7%D9%84%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85!%20%F0%9F%8C%B8%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D7%8%D8%A8%20%D9%85%D9%86%20%D9%85%D8%AA%D8%AC%D8%B1%D9%83" target="_blank" class="tif-btn inline-flex items-center gap-3 text-white text-lg font-bold px-10 py-5 rounded-full mb-8"><iconify-icon icon="mdi:whatsapp" width="26"></iconify-icon>اطلب الآن من واتساب</a>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-white/40">
+                        <div class="flex items-center gap-2"><iconify-icon icon="mdi:phone" width="18" class="text-tif"></iconify-icon><span dir="ltr" class="font-medium">0566168895</span></div>
+                        <div class="hidden sm:block w-1 h-1 rounded-full bg-white/20"></div>
+                        <div class="flex items-center gap-2"><iconify-icon icon="mdi:clock-fast" width="18" class="text-tif"></iconify-icon><span>نرد خلال دقائق ✨</span></div>
+                        <div class="hidden sm:block w-1 h-1 rounded-full bg-white/20"></div>
+                        <div class="flex items-center gap-2"><iconify-icon icon="mdi:brush" width="18" class="text-tif"></iconify-icon><span>أكريلك يدوي</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-3">
+                    <img src="https://z-cdn-media.chatglm.cn/files/7b3cafc5-0d74-443b-9312-f23b8253bb3b.jpeg?auth_key=1884814524-081ad3c536b34bedaf25ce263a088499-0-e566440e8b29b6f592109170714eb3e7" alt="لوحات لولو" class="w-8 h-8 rounded-full object-cover border border-tif/20">
+                    <span class="font-bold shimmer-text text-sm">لوحات لولو</span>
+                </div>
+                <div class="flex items-center gap-6 text-sm text-white/35">
+                    <a href="#pricing" class="hover:text-tif transition-colors">الأسعار</a>
+                    <a href="#gallery" class="hover:text-tif transition-colors">أعمالنا</a>
+                    <a href="#contact" class="hover:text-tif transition-colors">تواصل</a>
+                </div>
+                <div class="text-white/25 text-sm flex items-center gap-1"><span>© 2025 لوحات لولو</span><span class="text-tif/50">💎</span></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // === عرض أول طلب - مرة واحدة (النسخة مصصححة) ===
+        function checkOfferStatus() {
+            var claimed = localStorage.getItem('luluh_offer_claimed');
+            var activeEl = document.getElementById('offerActive');
+            var expiredEl = document.getElementById('offerExpired');
+            var navLink = document.getElementById('navOfferLink');
+            var navLinkM = document.getElementById('navOfferLinkMobile');
+            var heroBtn = document.getElementById('heroOfferBtn');
+            var featureTitle = document.getElementById('featureOfferTitle');
+            var featureDesc = document.getElementById('featureOfferDesc');
+            var confettiDots = document.querySelectorAll('.confetti');
+
+            if (claimed === 'true') {
+                if (activeEl) activeEl.classList.add('hidden');
+                if (expiredEl) expiredEl.classList.remove('hidden');
+                if (navLink) navLink.style.display = 'none';
+                if (navLinkM) navLink.style.display = 'none';
+                if (heroBtn) heroBtn.style.display = 'none';
+                if (featureTitle) featureTitle.textContent = 'أسعار تنافسية ✨';
+                if (featureDesc) featureDesc.textContent = 'أسعار تبدأ من 15 ريال';
+                confettiDots.forEach(function(dot) { dot.style.display = 'none'; });
+            } else {
+                if (activeEl) activeEl.classList.remove('hidden');
+                if (expirEd) expiredEl.classList.add('hidden');
+                if (navLink) navLink.style.display = '';
+                if (navLinkM) navLinkM.style.display = '';
+                if (heroBtn) heroBtn.style.display = '';
+                if (featureTitle) featureTitle.textContent = 'أول طلب 10 ر.س 💰';
+                if (featureDesc) featureDesc = 'عرض للعملاء الجدد';
+                confettiDots.forEach(function(dot) { dot.style.display = ''; });
+            }
+        }
+
+        function claimOffer() {
+            localStorage.setItem('luluh_offer_claimed', 'true');
+            checkOfferStatus();
+            var msg = 'السلام عليكم! 🌸 أريد الطلب من متجرك — عرض أول طلب بـ 10 ريال';
+            window.open('https://wa.me/966566895?text=' + encodeURIComponent(msg), '_blank');
+            showToast('✅ تم تفعيل العرض — هذا آخر مرة تقدر تستخدمه!');
+        }
+
+        // === باقي الكود (نفسه بدون الخطأ) ===
+
+        var menuBtn=document.getElementById('menuBtn'),closeMenu=document.getElementById('closeMenu'),mobileMenu=document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click',function(){mobileMenu.classList.add('open')});
+        closeMenu.addEventListener('click',function(){mobileMenu.classList.remove('open')});
+        document.querySelectorAll('.mobile-link').forEach(function(l){l.addEventListener('click',function(){mobileMenu.classList.remove('open')})});
+        var observer=new IntersectionObserver(function(entries){entries.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('visible')},i*60);observer.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+        document.querySelectorAll('.reveal').forEach(function(el){observer.observe(el)});
+
+        function showToast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(function(){t.classList.remove('show')},3500)}
+
+        function orderCategory(c){
+            var msg = 'السلام عليكم! 🌸 أريد الطلب من متجرك — ' + c;
+            window.open('https://wa.me/966566895?text='+encodeURIComponent(msg),'_blank');
+            showToast('✨ جاري التحويل لواتساب...');
+        }
+
+        function orderItem(i){
+            var msg = 'السلام عليكم! 🌸 أريد الطلب من متجرك — ' + i;
+            window.open('https://wa.me/966566895?text='+encodeURIComponent(msg),'_blank');
+            showToast('✨ جاري التحويل لواتساب...');
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+        var nav=document.querySelector('nav');
+        window.addEventListener('scroll',function(){nav.style.background=window.scrollY>50?'rgba(8,14,20,.95)':'rgba(8,14,20,.88)'});
+    </script>
+</body>
+</html>
